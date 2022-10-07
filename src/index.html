@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+
+
+  <div class="container text-center h-25">
+    <div class="row align-items-center h-100">
+      <div class="col-6 mx-auto">
+        <img src="../images/logo.svg" alt="logo">
+      </div>
+    </div>  
+  </div>
+
+  <div class="container h-100">
+    <div class="row h-40">
+      <div class="col-xl-8 mx-auto rounded-4 bg-white">
+        <div class="row p-4">
+          <div class="mobile-config col-lg-6">
+            <div class="bill">
+              <h2>Bill</h2>
+              <input type="number" placeholder="0" name="inBill" id="inBill">
+            </div>
+            <div class="select__type">
+              <h2>Select Type %</h2>
+              <div class="box-value">
+                <div class="box-radio" id="st5-container">
+                  <label for="st5">5%
+                    <input type="radio" class="0.5"value="5" name="radiost" id="st5">
+                    <span class="checkmark" id="checkmark5"></span>
+                  </label>
+                </div>
+                <div class="box-radio">
+                  <label for="st10">10%
+                    <input type="radio" value="0.10" name="radiost" id="st10">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="box-radio">
+                  <label for="st15">15%
+                    <input type="radio" value="0.15" name="radiost" id="st15">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="box-radio">
+                  <label for="st25">25%
+                    <input type="radio" value="0.25" name="radiost" id="st25">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="box-radio">
+                  <label for="st50">50%
+                    <input type="radio" value="0.50" name="radiost" id="st50">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="box-custom">
+                  <label for="stCustom">
+                    <input type="number" placeholder="Custom" name="radiost" id="stCustom">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="number_people">
+              <h2>Number of People</h2>
+              <input type="number" placeholder="0" id="numberPeople">
+            </div>
+          </div>
+          <div class="result col-lg-6 rounded-4">
+            <div class="tip_amount">
+              <div class="caption">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <div class="value">
+                <h2 id="tip">$0.00</h2> 
+              </div>
+            </div>
+            <div class="total">
+              <div class="caption">
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <div class="value">
+                <h2 id="total_value">$0.00</h2>
+              </div>
+            </div>
+            <div class="reset">
+              <button id="resetBtn">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    
+}
+
+body{
+    background-color: hsl(185, 41%, 84%)!important;
+    height: 100%;
+
+}
+
+html{
+    height: 100%;
+}
+
+.bill{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;  
+    margin-bottom: 30px;
+}
+
+.bill h2{
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+.bill input{
+    width: 97%;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 95%)!important;
+    color: hsl(183, 100%, 15%);
+    background: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+.bill input:hover,
+.bill input:focus{
+    outline: 2px solid #9FE8DF;
+}
+
+.bill input::placeholder{
+    color: hsl(184, 14%, 56%);
+}
+
+/* remove arrow from input number */
+.bill input::-webkit-outer-spin-button,
+.bill input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.bill input {
+  -moz-appearance: textfield;
+}
+
+.select__type{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;  
+}
+
+.select__type h2{
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+.box-value{
+    display: flex; 
+    flex-wrap: wrap;
+    width: 330px;
+    margin-bottom: 20px;
+}
+
+.box-value .box-radio{
+    position: relative;
+    width: 100px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box-value .box-radio:hover{
+    background-color: #9FE8DF;
+    color:hsl(183, 100%, 15%);
+}
+
+.box-value .box-radio label{
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.box-value .box-radio input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.box-value .box-custom{
+    width: 100px;
+    height: 47px;
+    border-radius: 10px;
+}
+
+.box-value .box-custom input{
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 95%);
+    border-radius: 10px;
+    height: 47px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color:hsl(183, 100%, 15%);
+}
+
+.box-value .box-custom input::placeholder{
+    color:hsl(183, 100%, 15%);
+}
+
+.box-value .box-custom input:focus,
+.box-value .box-custom input:hover {
+    border: 2px solid #9FE8DF;    
+}
+
+/* remove arrow from input number */
+.box-value .box-custom input::-webkit-outer-spin-button,
+.box-value .box-custom input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.box-value .box-custom input{
+    -moz-appearance: textfield;
+}
+
+.number_people{
+    font-family: 'Space Mono', monospace;
+
+}
+
+.number_people h2{
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(183, 100%, 15%);
+}
+
+.number_people input{
+    width: 97%;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 95%)!important;
+    color: hsl(183, 100%, 15%);
+    background: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+/* remove arrow from input number */
+.number_people input::-webkit-outer-spin-button,
+.number_people input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.number_people input{
+    -moz-appearance: textfield;
+}
+
+.number_people input:hover,
+.number_people input:focus{
+    outline: 2px solid #9FE8DF;
+}
+
+.number_people input::placeholder{
+    color: hsl(184, 14%, 56%);
+}
+
+.result{
+    background-color: hsl(183, 100%, 15%); 
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    padding: 40px;
+}
+
+.tip_amount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.tip_amount .caption h2{
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.tip_amount .caption p{
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+}
+
+.tip_amount .value h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #2BBFA9;
+}
+
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 80px;
+}
+
+.total .caption h2{
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.total .caption p{
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+}
+
+.total .value h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #2BBFA9;
+}
+
+.reset{
+    padding: 0px 20px;
+    width:100%;
+}
+
+.reset button{
+    width: 100%;
+    height: 40px;
+    background-color: #2bbfa96b;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+}
+
+.reset button:hover{
+    background-color: #2BBFA9;
+}
+
+
+@media (min-width: 1400px){
+    html{
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .mobile-config{
+        margin-bottom: 40px;
+    }   
+}
+
+@media (max-width: 600px){
+    .box-value .box-radio{
+        width: 150px;
+    }
+    .box-value .box-custom,
+    .box-value .box-custom input{
+        width: 150px;
+    }
+}
